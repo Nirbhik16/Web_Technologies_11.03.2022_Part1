@@ -1,0 +1,63 @@
+/*Assignment Submitted by Nirbhik Kakkar(CO20335)*/
+/* here media query is used to make the attached image responsive in the way that it gets changed according to viewport
+the div tag which is 312.5px x 312.5px is then shifted to four qudrants */
+.homer{
+    width: 312.5px; height: 312.5px;
+    background: url("homer.jpg");
+}
+
+
+/* If the browser screen width is greater than 1600 pixels, display the top-left image of homer.jpg */
+@media only screen and (min-width: 1600px) {
+    .homer{
+            background-position : left top;
+    }
+}
+
+
+/* If the browser screen width is greater than 1400 pixels but less than or equal to 1600 pixels, display the top-right image of homer.jpg */
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+    .homer{
+            background-position : right top;
+    }
+}
+
+
+/* If the browser screen width is greater than 1200 pixels but less than or equal to 1400 pixels, display the bottom-left image of homer.jpg */
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+    .homer{
+            background-position : left bottom;
+    }
+}
+
+
+/* If the browser screen width is greater than 1000 pixels but less than or equal to 1200 pixels, display the last image, bottom-right of homer.jpg */
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+    .homer{
+            background-position : right bottom;
+    }
+}
+
+
+/* If the browser screen width is greater than 800 pixels but less than or equal to 1000 pixels, display the bottom-left image of homer.jpg */
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+    .homer{
+            background-position : left bottom;
+    }
+}
+
+
+/* If the browser screen width is greater than 600 pixels but less than or equal to 800 pixels, display the top-right image of homer.jpg */
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+    .homer{
+            background-position : right top;
+    }
+}
+
+
+/* If the browser screen width is less than or equal to 600 pixels, display the top-left image of homer.jpg */
+@media only screen and (max-width: 600px) {
+    .homer{
+            background-position : left top;
+    }
+}
